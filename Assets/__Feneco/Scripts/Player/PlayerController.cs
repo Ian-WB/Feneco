@@ -102,8 +102,8 @@ public class PlayerController : MonoBehaviour
 
         if (IsGrounded() && !isDashing && !isAttacking && !Physics.Raycast(transform.position, Vector3.down, out hit, 1.0f, dunesMask))
         {
-            rigidBody.velocity = new Vector3(rigidBody.velocity.x, 0f, rigidBody.velocity.z);
-            rigidBody.velocity += Vector3.up * jump;
+            rigidBody.linearVelocity = new Vector3(rigidBody.linearVelocity.x, 0f, rigidBody.linearVelocity.z);
+            rigidBody.linearVelocity += Vector3.up * jump;
             animator.SetBool("IsJumping", true);
             SFXManager.instance.PlaySFX(SFXManager.SFXType.Jump);
         }
@@ -184,14 +184,14 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsRunning", true);
             rigidBody.useGravity = false;
 
-            Vector3 originalVelocity = rigidBody.velocity;
+            Vector3 originalVelocity = rigidBody.linearVelocity;
             Vector3 dashDirection = move.magnitude > 0 ? movementDirection : cam.forward;
 
-            rigidBody.velocity = dashDirection * dashSpeed;
+            rigidBody.linearVelocity = dashDirection * dashSpeed;
             yield return new WaitForSeconds(dashDuration);
 
             rigidBody.useGravity = true;
-            rigidBody.velocity = originalVelocity;
+            rigidBody.linearVelocity = originalVelocity;
 
             isDashing = false;
             animator.SetBool("IsDashing", false);
@@ -214,7 +214,7 @@ public class PlayerController : MonoBehaviour
                 movement = movement.normalized * (speed * speedModifier)/4.0f * Time.deltaTime;
                 if (!isDashing && !isAttacking && !isInventory && !isPaused && !isExploded)
                 {
-                    rigidBody.velocity = new Vector3(movement.x, rigidBody.velocity.y, movement.z);
+                    rigidBody.linearVelocity = new Vector3(movement.x, rigidBody.linearVelocity.y, movement.z);
                 }
             }
             else
@@ -222,12 +222,12 @@ public class PlayerController : MonoBehaviour
                 movement = movement.normalized * (speed * speedModifier) * Time.deltaTime;
                 if (!isDashing && !isAttacking && !isInventory && !isPaused && !isExploded)
                 {
-                    rigidBody.velocity = new Vector3(movement.x, rigidBody.velocity.y, movement.z);
+                    rigidBody.linearVelocity = new Vector3(movement.x, rigidBody.linearVelocity.y, movement.z);
                 }
             }
         }
 
-        rigidBody.velocity += Physics.gravity * gravity * Time.deltaTime;
+        rigidBody.linearVelocity += Physics.gravity * gravity * Time.deltaTime;
     }
 
     public bool IsGrounded()

@@ -55,7 +55,7 @@ public class PlayerMovementState : SM
     {
         if (movementInput == Vector2.zero || speedModifier == 0f)
         {
-            stateMachine.Player.rb.velocity = new Vector3(0, stateMachine.Player.rb.velocity.y,0);
+            stateMachine.Player.rb.linearVelocity = new Vector3(0, stateMachine.Player.rb.linearVelocity.y,0);
             return;
         }
 
@@ -136,7 +136,7 @@ public class PlayerMovementState : SM
     }
     protected Vector3 GetPlayerHorizontalVelocity()
     {
-        Vector3 playerHorizontalVelocity = stateMachine.Player.rb.velocity;
+        Vector3 playerHorizontalVelocity = stateMachine.Player.rb.linearVelocity;
 
         playerHorizontalVelocity.y = 0f;
 

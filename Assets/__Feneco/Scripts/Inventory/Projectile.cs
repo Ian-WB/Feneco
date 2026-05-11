@@ -126,7 +126,7 @@ public class Projectile : MonoBehaviour
                 rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, upwardsExplosionForce, ForceMode.Impulse);
                 
                 Debug.Log("Kabooom " + nearbyObject.name);
-                StartCoroutine(ExplosionEnd(rb.velocity));
+                StartCoroutine(ExplosionEnd(rb.linearVelocity));
             }
     }
         // destroy projectile with 0.1 seconds delay

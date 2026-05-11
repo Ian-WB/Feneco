@@ -64,7 +64,7 @@ public class EnemyController : MonoBehaviour
     private IEnumerator KnockbackCooldown()
     {
         yield return new WaitForSeconds(0.5f);
-        rigidBody.velocity = Vector3.zero;
+        rigidBody.linearVelocity = Vector3.zero;
     }
     public void OnDeath()
     {
@@ -97,7 +97,7 @@ public class EnemyController : MonoBehaviour
 
         yield return new WaitForSeconds(duration);
 
-        rigidBody.velocity = Vector3.zero;
+        rigidBody.linearVelocity = Vector3.zero;
 
         navMeshAgent.enabled = true;
 

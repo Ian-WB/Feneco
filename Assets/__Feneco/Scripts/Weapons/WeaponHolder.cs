@@ -108,7 +108,7 @@ public class WeaponHolder : MonoBehaviour
 
         Vector3 attackDirection = new Vector3(cam.forward.x, 0, cam.forward.z).normalized;
 
-        rigidBody.velocity = attackDirection * weapon.attackSpeed;
+        rigidBody.linearVelocity = attackDirection * weapon.attackSpeed;
         yield return new WaitForSeconds(weapon.attackDuration);
 
         

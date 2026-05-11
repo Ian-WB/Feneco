@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using TMPro;
-using Cinemachine;
+using Unity.Cinemachine;
 
 public class NPC : MonoBehaviour
 {
