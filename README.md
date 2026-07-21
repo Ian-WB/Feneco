@@ -4,9 +4,9 @@
 
 ![Feneco concept art — facing the Great Desert City](docs/media/concept-city.jpg)
 
-**Engine:** Unity 6 (6000.3.15f1) · Universal Render Pipeline · New Input System · Cinemachine
-**Platform:** Windows
-**Context:** Team project for Axes (Eixos) 3 & 4 of the Digital Games program at PUC Minas
+**Engine:** Unity 6 (6000.3.15f1) · Universal Render Pipeline · New Input System · Cinemachine  
+**Platform:** Windows  
+**Context:** Team project for Axes (Eixos) 3 & 4 of the Digital Games program at PUC Minas  
 **Original team repository:** [SauloSouza27/Feneco](https://github.com/SauloSouza27/Feneco)
 
 > **Note on repo history:** this repository is a portfolio snapshot of our academic team project. It preserves the full commit history, so every teammate's authorship is intact. The **My contributions** section below describes my direct work only.
@@ -57,7 +57,7 @@ Other systems in the shipped slice (enemy FSM integration, escort NPC, menus, au
 
 ## Controls
 
-**Keyboard & Mouse** — Move: `WASD` / arrows · Camera: mouse · Attack: `LMB` / `RMB` · Jump: `Space` · Dash: `Left Shift` · Interact: `E` · Inventory: `I` / `Tab` · Menu: `Esc`
+**Keyboard & Mouse** — Move: `WASD` / arrows · Camera: mouse · Attack: `LMB` / `RMB` · Jump: `Space` · Dash: `Left Shift` · Interact: `E` · Inventory: `I` / `Tab` · Menu: `Esc`  
 **Gamepad** — supported (sticks + triggers)
 
 ---
