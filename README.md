@@ -85,14 +85,14 @@ The full Game Design Review documents (in Portuguese) are included:
 Academic team project — Digital Games, PUC Minas:
 
 - Saulo Souza — [@SauloSouza27](https://github.com/SauloSouza27)
-- Maria Fernanda Silva
-- Paulo Antônio
-- Guilherme Oliveira
+- Maria Fernanda Silva — [ArtStation](https://www.artstation.com/fernanda828)
+- Paulo Antônio — [@Tiofly](https://github.com/Tiofly)
+- Guilherme Oliveira — [@megatruckp](https://github.com/megatruckp)
 - Lucca Oliveira
 - Fabrício Frade — [@FFrade22](https://github.com/FFrade22)
 - Ian Barbosa — [@Ian-WB](https://github.com/Ian-WB)
 
-*(Additional GitHub contributor accounts: @megatruckp, @Tiofly, @toezin05.)*
+*(Also contributing on GitHub: [@toezin05](https://github.com/toezin05).)*
 
 ---
 
